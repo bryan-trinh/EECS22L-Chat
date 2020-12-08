@@ -1,0 +1,96 @@
+﻿Note:
+Please do not use anything in the ‘Piece’ Struct as it might be implemented for the AI
+All the functions are working however, but it is easier just to use the board
+
+
+
+
+General Overview (of what we currently have) 
+
+
+Variables: 
+Int board[8][8] (local variable)
+ 2d array containing all the pieces (they are just integers and can also be addressed using E_PieceType), manipulate the board on the pieces to move things around
+
+
+
+
+#define PIECEOFFSET 6 
+        -Helps supports (and to be used in conjunction with)  E_PieceType enum and board
+        -The offset is the conversion between pieces
+                -eg. WhiteP = 1 and BlackP = 7
+        -Note if this means that with the board you can do things like board[i][j] = WhiteP;
+#define MOV_SIZE 5
+        -size of arrays for related to movement 
+        -current contains {initial.x,initial.y, final.x,final.y, promotion value } 
+
+
+
+
+Functions:
+
+
+ReadInput()
+- Handles the input (more information under “specific implementation: GUI”)
+
+Move()
+- Moves the Piece to the specified location
+
+
+Initialization()
+- Work in Progress, currently the board is hard coded in
+
+
+PrintBoard()
+        -Prints the board 2d array
+
+
+
+
+Functions Left to Code:
+IsValid() 
+        -is this a valid move
+        -includes enpassant,castling, making legal moves when in check
+IsCheck() 
+        -is this check
+        -is this checkmate
+
+
+Specific Implementation Notes
+
+
+GUI- 
+When moving pieces on the board such as
+ Ke2 -> Ke3 (King at spot e2, moves to King spot e3)
+The GUI should send the string “e2 e3” (there is a space)
+And the GUI should send “e7 e8 q” in case of promotion 
+
+
+
+
+
+
+IsValid- 
+Should return an integer with 
+0- not valid
+1- valid
+2- valid and capture
+3- valid and check
+4- valid capture and check
+
+
+
+
+Castling rules : 
+https://www.chessvariants.com/d.chess/castlefaq.html
+
+
+IsCheck-
+Should return an integer with
+0- not in check
+1- in check
+2- checkmate 
+
+
+
+-Also can implement a previous move if critically needed

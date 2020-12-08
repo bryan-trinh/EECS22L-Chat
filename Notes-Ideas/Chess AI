@@ -1,0 +1,31 @@
+General pointer tips for chess
+
+Early Game: Develop Pieces
+
+MidGame: Improve Position (this is noted by castling) 
+
+Late Game: Queens are off
+
+
+Suggestions:
+
+1. Pieces have values. Change the values as the game progresss
+Knights are worth more midgame and less late game, knights are better when the position is complicated and tight, they can 
+enter spaces that bishops, rooks and queen cannot
+-> piece values should change (little more drastically at different parts of the game)
+
+
+Expansion: Pieces like the Bishop (blocked between) on the back rank, 
+knights on the corners, they should be worth less value because they are pretty useless
+
+2. Winning the EXCHANGE 
+This is probably the most important thing. While piece values can change from game state,  Usually winning the exchange is valuable
+If you have a center knight for example (it should be worth more points because it covers a lot of strong squares)
+even better is a knight on an outpost( the pawns are past the knight can no longer 'kick' or attack the knight)
+
+This knight should be worth more than the bishop!!! So it would be bad (min max) to trade this knight away!
+
+3. When you are ahead by lots of value (multiple exchanges, passed pawn, etc) YOU SHOULD trade
+
+By equally trading material ( for relatively the same value), you will come out ahead in the late game and it will be easier to 
+convert to a win with less things on the board

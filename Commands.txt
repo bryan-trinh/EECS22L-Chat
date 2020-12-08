@@ -1,0 +1,21 @@
+Client To Server
+
+$login
+$end
+$register
+$chat(space)(forward username)
+$playchess(space)(Forwardusername)
+$image(space)(forward username)
+$addfriend(space)(forward username)
+
+
+Server To Client
+
+$login
+$register
+$addfriend
+$playchess(space)(senderusername)
+$chat(space)(senderusername)
+$image(space)(senderusername)
+$end
+

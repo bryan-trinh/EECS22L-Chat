@@ -1,0 +1,32 @@
+INSTALLATION GUIDE
+
+Source Code Package
+
+1. Copy the tar file to your Linux server.
+2. Type "tar -xvzf Chat_V1.0.tar.gz"
+3. Type "cd Chat_v1.0"
+4. Type "make"
+5. Type "cd bin"
+6. You can now view your .bin files
+
+NOTES:
+- Both users have to be online at the same time to message
+- Server times out after 120 seconds
+
+Format for server startup:
+./Server <port_no>
+
+Format for client startup:
+./Client <host> <port_no>
+
+Set Up:
+1. Start the server.
+ 	eg: ./Server 5005
+2. Start the client 1.
+ 	eg: ./Client bondi 5005
+3. Start the client 2. 	eg: ./Client bondi 5005
+4. If an account has not been registered yet, register one.
+5. Login in with the login credentials.
+6. Click on add friend button and add a new friend. Both users must be online.
+6. To message with another user, you must click on their profile from your friend's list and type your message in the text entry box.
+7. The other user's chat will show up on the terminal.

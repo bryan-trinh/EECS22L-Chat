@@ -1,0 +1,47 @@
+In order to load a game, please select 'load game', which is option 4.
+
+After hitting enter, it should ask for a text file (.txt) extension.
+
+MANUALLY TYPE THE NAME OF THE FILE INCLUDING THE EXTENSION
+EG: test.txt
+This program ONLY READS TEXT FILES.
+
+The format should be as follows:
+
+(Move #)
+
+(White or Black's turn, 0 or 1 Respectively \n)
+
+(64 digits that represent the piece value ) 
+
+
+
+An example can be seen below : 
+
+5
+1
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8
+
+
+Analysis of what is happening is in brackets. Please do delete the brackets.
+
+
+5                               [ white and black have each moved 5 times]
+1                               [ white has already moved and it is black's move ]
+1 2 3 4 5 6 7 8                 [ Rank 8 on the chess board ]
+1 2 3 4 5 6 7 8                 [ Rank 7 on the chess board ]               
+1 2 3 4 5 6 7 8                 [ Rank 6 on the chess board ]
+1 2 3 4 5 6 7 8                 [ Rank 5 on the chess board ]
+1 2 3 4 5 6 7 8                 [ Rank 4 on the chess board ]
+1 2 3 4 5 6 7 8                 [ Rank 3 on the chess board ]
+1 2 3 4 5 6 7 8                 [ Rank 2 on the chess board ]
+1 2 3 4 5 6 7 8                 [ Rank 1 on the chess board ]
+[Columns
+A B C D E F G H ]
